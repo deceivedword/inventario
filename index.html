@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Inventario — Controla tu almacén sin perder el hilo</title>
+  <meta name="description"
+    content="Mi Inventario: registra entradas, salidas, ajustes y transferencias, con alertas de reposición y punto de venta integrado. Primeros 14 días gratis, luego $199 MXN/mes.">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand">
+        <span class="logo-chip logo-chip-header">
+          <img src="assets/logo.png" alt="Mi Inventario" class="brand-logo">
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="#funciones">Funciones</a>
+        <a href="#demo">Demo</a>
+        <a href="#precio">Precio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#precio" class="btn btn-primary btn-small">Empieza gratis</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Para negocios en crecimiento</p>
+          <h1>Controla tu almacén sin perder el hilo</h1>
+          <p class="hero-lead">Entradas, salidas, ajustes, transferencias y punto de venta en un solo lugar, con avisos
+            automáticos de stock.</p>
+          <div class="hero-actions">
+            <a href="#precio" class="btn btn-primary">Prueba 14 días gratis</a>
+            <a href="#demo" class="btn btn-ghost">Ver demo en vivo</a>
+          </div>
+          <p class="hero-fine">Sin tarjeta de crédito · Cancela cuando quieras</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mockup-card">
+            <div class="mockup-card-head">
+              <span class="mockup-dot"></span>
+              <span class="mockup-title">Estado del inventario</span>
+            </div>
+            <div class="mockup-stats">
+              <div class="mockup-stat">
+                <span class="mockup-stat-num">482</span>
+                <span class="mockup-stat-label">Productos registrados</span>
+              </div>
+              <div class="mockup-stat mockup-stat-warn">
+                <span class="mockup-stat-num">12</span>
+                <span class="mockup-stat-label">Necesitan reposición</span>
+              </div>
+            </div>
+            <ul class="mockup-badges">
+              <li class="badge badge-ok">Existencia · 401</li>
+              <li class="badge badge-warn">Pocas existencias · 68</li>
+              <li class="badge badge-danger">Agotado · 13</li>
+            </ul>
+          </div>
+          <img src="assets/logo.png" alt="" class="hero-mascot">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DOLORES ===== -->
+    <section class="pains">
+      <div class="wrap pains-inner">
+        <p class="pains-item">"No sé cuánto tengo hasta que voy y cuento a mano."</p>
+        <span class="pains-divider" aria-hidden="true"></span>
+        <p class="pains-item">"Se me acabó un producto y ni cuenta me di."</p>
+        <span class="pains-divider" aria-hidden="true"></span>
+        <p class="pains-item">"Cada sucursal lleva su propio cuaderno."</p>
+      </div>
+    </section>
+
+    <!-- ===== FUNCIONES ===== -->
+    <section id="funciones" class="features">
+      <div class="wrap">
+        <h2>Todo tu almacén en un solo tablero</h2>
+        <p class="section-lead">Control total de productos, movimientos y existencias de forma clara y rápida.</p>
+      </div>
+
+      <!-- Feature 1 -->
+      <div class="wrap feature-row">
+        <div class="feature-text">
+          <h3>Múltiples inventarios organizados</h3>
+          <p>Organiza por sucursales, bodegas o líneas con categorías y carpetas personalizadas.</p>
+          <ul class="feature-points">
+            <li>Códigos y nombres personalizados</li>
+            <li>Categorías y carpetas</li>
+            <li>Traspasos inmediatos entre bodegas</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-mockup">
+            <div class="mini-mockup-row"><span class="folder-icon">📁</span> Bodega Central — INV-001</div>
+            <div class="mini-mockup-row"><span class="folder-icon">📁</span> Sucursal Norte — INV-014</div>
+            <div class="mini-mockup-row"><span class="folder-icon">📁</span> Punto de venta — INV-022</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="wrap feature-row feature-row-reverse">
+        <div class="feature-text">
+          <h3>Entradas, salidas y comprobantes</h3>
+          <p>Cada movimiento genera un comprobante interno con folio automático para saber quién sacó qué.</p>
+          <ul class="feature-points">
+            <li>Registro de movimientos en segundos</li>
+            <li>Comprobantes con folio automático</li>
+            <li>Historial completo por producto</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-mockup">
+            <div class="mini-mockup-row"><span class="move-in">↓ Entrada</span> Comprobante #E-2291</div>
+            <div class="mini-mockup-row"><span class="move-out">↑ Salida</span> Comprobante #S-2292</div>
+            <div class="mini-mockup-row"><span class="move-in">↓ Entrada</span> Comprobante #E-2293</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: reposición -->
+      <div class="wrap feature-row">
+        <div class="feature-text">
+          <h3>Alertas de reposición automáticas</h3>
+          <p>Avisos claros en tu tablero antes de que un producto se agote.</p>
+          <ul class="feature-points">
+            <li>Alertas visibles en el tablero</li>
+            <li>Conteo total de productos</li>
+            <li>Clasificación por nivel de existencia</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="alert-banner">
+            <div class="alert-banner-main">
+              <span class="alert-icon">🔔</span>
+              <div>
+                <strong>12 productos necesitan reposición</strong>
+                <span>de 482 productos en total</span>
+              </div>
+            </div>
+            <ul class="mockup-badges mockup-badges-tight">
+              <li class="badge badge-ok">Con existencia</li>
+              <li class="badge badge-warn">Pocas existencias</li>
+              <li class="badge badge-danger">Agotado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4: ajustes -->
+      <div class="wrap feature-row feature-row-reverse">
+        <div class="feature-text">
+          <h3>Ajustes de inventario documentados</h3>
+          <p>Documenta cualquier diferencia de stock con fecha, responsable y estado.</p>
+          <ul class="feature-points">
+            <li>Folios únicos de ajuste</li>
+            <li>Estados: pendiente, aplicado o cancelado</li>
+            <li>Transparencia en cada cambio</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="table-mockup">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Núm. ajuste</th>
+                  <th>Fecha</th>
+                  <th>Creado por</th>
+                  <th>Estado</th>
+                  <th>Productos</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0142</td>
+                  <td>AJ-0142</td>
+                  <td>12 sep 2026</td>
+                  <td>M. Reyes</td>
+                  <td><span class="pill pill-ok">Aplicado</span></td>
+                  <td>3</td>
+                  <td class="table-actions">✎ 🗑</td>
+                </tr>
+                <tr>
+                  <td>0143</td>
+                  <td>AJ-0143</td>
+                  <td>15 sep 2026</td>
+                  <td>L. Torres</td>
+                  <td><span class="pill pill-pending">Pendiente</span></td>
+                  <td>1</td>
+                  <td class="table-actions">✎ 🗑</td>
+                </tr>
+                <tr>
+                  <td>0144</td>
+                  <td>AJ-0144</td>
+                  <td>18 sep 2026</td>
+                  <td>M. Reyes</td>
+                  <td><span class="pill pill-cancel">Cancelado</span></td>
+                  <td>5</td>
+                  <td class="table-actions">✎ 🗑</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 5: POS -->
+      <div class="wrap feature-row">
+        <div class="feature-text">
+          <h3>Punto de venta (POS) integrado</h3>
+          <p>Vende y descuenta existencias automáticamente en tiempo real.</p>
+          <ul class="feature-points">
+            <li>Conectado directo al stock</li>
+            <li>Descuento automático por venta</li>
+            <li>Cobro fácil y rápido</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-mockup mini-mockup-pos">
+            <div class="mini-mockup-row">Playera básica — 2 pz <span class="pos-price">$358.00</span></div>
+            <div class="mini-mockup-row">Gorra ajustable — 1 pz <span class="pos-price">$149.00</span></div>
+            <div class="mini-mockup-total">Total <strong>$507.00</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEMO ===== -->
+    <section id="demo" class="demo">
+      <div class="wrap demo-inner">
+        <div class="demo-copy">
+          <h2>Prueba el demo en vivo sin registrarte</h2>
+          <p>Explora inventarios, movimientos, transferencias, ajustes y punto de venta con datos de prueba.</p>
+          <a href="https://mi-inventario-demo.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary">Ver
+            demo en vivo</a>
+        </div>
+        <div class="demo-visual">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+              <span class="browser-url">mi-inventario-demo.netlify.app</span>
+            </div>
+            <div class="browser-body">
+              <img src="assets/logo.png" alt="Vista previa de Mi Inventario" class="browser-logo">
+              <p>Categorías · Ajustes · Transferencias · Movimientos · Punto de venta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRECIO ===== -->
+    <section id="precio" class="pricing">
+      <div class="wrap">
+        <h2>Elige el plan ideal para tu negocio</h2>
+        <p class="section-lead">Empieza gratis por 14 días o suscríbete al plan mensual sin plazos forzosos.</p>
+
+        <div class="pricing-grid">
+          <!-- Card 1: Gratis 14 Días -->
+          <div class="price-card">
+            <div class="price-card-head">
+              <span class="price-badge badge-free">Sin compromiso</span>
+              <h3 class="price-title">Prueba Gratis</h3>
+              <div class="price-amount">
+                <span class="price-currency">$</span>
+                <span class="price-number">0</span>
+                <span class="price-period">/ 14 días</span>
+              </div>
+              <p class="price-note">Acceso total · Sin tarjeta de crédito</p>
+            </div>
+            <ul class="price-features">
+              <li>Acceso a todas las funciones</li>
+              <li>Inventarios e ítems ilimitados</li>
+              <li>Alertas de reposición automáticas</li>
+              <li>Punto de venta (POS) integrado</li>
+              <li>Prueba completa sin costo</li>
+            </ul>
+            <a href="#contacto" class="btn btn-ghost btn-block">Probar 14 días gratis</a>
+          </div>
+
+          <!-- Card 2: Plan $199 MXN -->
+          <div class="price-card price-card-popular">
+            <div class="price-card-head">
+              <span class="price-badge badge-pro">Recomendado</span>
+              <h3 class="price-title">Plan Mensual</h3>
+              <div class="price-amount">
+                <span class="price-currency">$</span>
+                <span class="price-number">199</span>
+                <span class="price-period">MXN / mes</span>
+              </div>
+              <p class="price-note">Cancela cuando quieras</p>
+            </div>
+            <ul class="price-features">
+              <li>Todo lo de la prueba gratis</li>
+              <li>Uso continuo sin límites</li>
+              <li>Comprobantes e historial ilimitado</li>
+              <li>Múltiples inventarios y carpetas</li>
+              <li>Soporte técnico directo</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary btn-block">Empieza por $199 MXN</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="final-cta">
+      <div class="wrap final-cta-inner">
+        <span class="logo-chip logo-chip-cta">
+          <img src="assets/logo.png" alt="Mi Inventario" class="final-cta-logo">
+        </span>
+        <h2>Toma el control de tu almacén hoy</h2>
+        <p>Registra entradas, salidas y ventas en segundos sin complicaciones en hojas de cálculo.</p>
+        <a href="#contacto" class="btn btn-primary">Empieza tus 14 días gratis</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contacto" class="site-footer">
+    <div class="wrap footer-inner">
+
+      <div class="footer-top">
+        <a href="#top" class="footer-brand">
+          <span class="logo-chip logo-chip-footer">
+            <img src="assets/logo.png" alt="Mi Inventario" class="footer-logo">
+          </span>
+          <span class="footer-brand-name">Mi Inventario</span>
+        </a>
+
+        <nav class="footer-nav">
+          <a href="#funciones">Funciones</a>
+          <a href="#demo">Demo</a>
+          <a href="#precio">Precio</a>
+        </nav>
+
+        <div class="footer-contact">
+          <a href="mailto:"></a>
+          <a href="tel:"></a>
+          <a href="https://mi-inventario-demo.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Mi Inventario. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Aviso de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
