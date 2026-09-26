@@ -113,36 +113,6 @@ ul{ margin:0; padding:0; list-style:none; }
 .btn-small{ padding: 10px 22px; font-size: 0.92rem; }
 .btn-block{ width: 100%; }
 
-/* ---------- Logo "sticker" ---------- */
-/* Envuelve el <img> del logo en una tarjetita con fondo, sombra
-   y una ligera rotación, para que se lea como un sticker/insignia
-   y no como una foto pegada directamente sobre el fondo. */
-.logo-chip{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--paper);
-  border-radius: var(--radius-sm);
-  padding: 6px;
-  box-shadow: 0 10px 20px -10px rgba(18,33,61,0.35);
-  transform: rotate(-3deg);
-  transition: transform 0.15s ease;
-}
-.logo-chip img{
-  display: block;
-  height: 100%;
-  width: auto;
-  border-radius: 6px;
-}
-.brand:hover .logo-chip,
-.footer-brand:hover .logo-chip{
-  transform: rotate(0deg);
-}
-
-.logo-chip-header{ height: 64px; }
-.logo-chip-footer{ height: 64px; background: rgba(255,255,255,0.95); }
-.logo-chip-cta{ height: 46px; }
-
 /* ---------- Header ---------- */
 .site-header{
   position: sticky;
@@ -160,7 +130,7 @@ ul{ margin:0; padding:0; list-style:none; }
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.brand-logo{ height: 46px; width:auto; }
+.brand-logo{ height: 64px; width:auto; display:block; }
 
 .main-nav{
   display:flex;
@@ -173,7 +143,7 @@ ul{ margin:0; padding:0; list-style:none; }
 
 @media (max-width: 720px){
   .main-nav{ display:none; }
-  .logo-chip-header{ height: 48px; }
+  .brand-logo{ height: 48px; }
 }
 
 /* ---------- Hero ---------- */
@@ -650,45 +620,16 @@ ul{ margin:0; padding:0; list-style:none; }
 .site-footer{
   background: var(--navy);
   color: rgba(255,255,255,0.7);
-  padding: 36px 0 24px;
+  padding: 28px 0;
 }
 .footer-inner{
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.footer-top{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 18px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
-}
-
-.footer-brand{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.footer-brand-name{
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--paper);
-}
-
-.footer-nav{
   display:flex;
-  gap: 22px;
+  align-items:center;
+  justify-content:space-between;
   flex-wrap: wrap;
-  font-size: 0.88rem;
-  font-weight: 600;
+  gap: 16px;
 }
-.footer-nav a:hover{ color: var(--amber); }
-
+.footer-logo{ height: 64px; width:auto; display:block; }
 .footer-contact{
   display:flex;
   gap: 20px;
@@ -697,32 +638,12 @@ ul{ margin:0; padding:0; list-style:none; }
   font-weight: 600;
 }
 .footer-contact a:hover{ color: var(--amber); }
-
-.footer-bottom{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
 .footer-copy{
+  width: 100%;
+  text-align:center;
   font-size: 0.78rem;
   color: rgba(255,255,255,0.45);
-  margin: 0;
-}
-
-.footer-legal{
-  display:flex;
-  gap: 18px;
-  flex-wrap: wrap;
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.55);
-}
-.footer-legal a:hover{ color: var(--amber); }
-
-@media (max-width: 560px){
-  .footer-bottom{ flex-direction: column; text-align:center; }
+  margin: 14px 0 0;
 }
 
 /* ---------- WhatsApp flotante ---------- */
